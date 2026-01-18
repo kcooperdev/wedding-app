@@ -209,3 +209,4 @@ For issues or questions, please check the console logs for detailed error messag
 
 Private project - All rights reserved
 # wedding-app
+# wedding-app
