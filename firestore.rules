@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is admin (you'll implement role logic later)
+    // For now, we will allow read/write for development, then lock it down.
+    
+    // Allow read/write to all documents for now (Development Mode)
+    // WARNING: Replace with secure rules before production!
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
